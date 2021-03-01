@@ -1,15 +1,19 @@
-body{
+
+*{
     margin: 0;
     padding: 0;
+    
     
 }
 .container{
     min-height:100vh;
     overflow: hidden;
     display: flex;
+    /* transition: flex .5s; */
 }
 .first-img{
     background-image: url("images/road.jpg");
+    
 
 }
 .second-img{
@@ -26,12 +30,46 @@ body{
 }
 .fifth-img{
     background-image: url("images/sky.jpg");
-    
+     
 }
 .content{
-    background-size: cover;
+    background-size: cover;  
     background-position: center;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: flex 1s;
+   
     /* width: 300px;
     height: 640px; */
+}
+.content p{
+    color: white;
+    font-size: 37px;
+}
+.content p:nth-child(1){
+    /* font-size: 10px; */
+    transform: translateY(100%);
+}
+.content p:nth-child(3){
+    /* font-size: 10px; */
+    transform: translateY(-100%);
+}
+.changes {
+    flex: 1 0 32%;
+    /* transition: flex .5s; */
+    margin:0;
+    width: 100%;
+    transition:all 1s;
+    /* flex: 1 0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1);
+}
+.down{
+    transform: translateY(0);
 }
