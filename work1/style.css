@@ -13,7 +13,6 @@ h1{
 }
 
 body{
-    background-image: url(./black-wallpaper-to-set-as-background-28.jpg);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -29,8 +28,22 @@ body{
     background-size: cover;
     border: solid;
     border-color: gray;
-    border-width: 10px;
+    border-width: 5px;
+
+    
 }
+.horloge::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
 .hand {
     position: absolute;
     top: 50%;
@@ -39,18 +52,18 @@ body{
     border-radius: 2px;
 
 }
-.hour-hand{
+.hour-needl{
     width: 4px;
     height: 20%;
     background-color: black
 }
-.min-hand{
-    width: 2px;
+.min-needl{
+    width: 4px;
     height: 35%;
     background-color: black
 }
-.second-hand{
-    width: 1px;
+.second-needl{
+    width: 2px;
     height: 40%;
     background-color: red;
 }
