@@ -21,23 +21,23 @@ html {
     display: flex;
 }
 .first-img{
-    background-image: url("images/road.jpg");
+    background-image: url("./images/road.jpg");
 
 }
 .second-img{
-    background-image: url("images/glass.jpg");
+    background-image: url("./images/glass.jpg");
   
 }
 .third-img{
-    background-image: url("images/le\ quais.jpg");
+    background-image: url("./images/le\ quais.jpg");
 
 }
 .forth-img{
-    background-image: url("images/fox.jpg");
+    background-image: url("./images/fox.jpg");
 
 }
 .fifth-img{
-    background-image: url("images/sky.jpg");
+    background-image: url("./images/sky.jpg");
     
 }
 
