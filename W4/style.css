@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+html {
+    /* box-sizing: border-box; */
+    background:#ffc600;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Roboto Mono', monospace;
+  }
+  body {
+    margin: 0;
+    
+
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+.container{
+    min-height:100vh;
+    overflow: hidden;
+    display: flex;
+}
+.first-img{
+    background-image: url("images/road.jpg");
+
+}
+.second-img{
+    background-image: url("images/glass.jpg");
+  
+}
+.third-img{
+    background-image: url("images/le\ quais.jpg");
+
+}
+.forth-img{
+    background-image: url("images/fox.jpg");
+
+}
+.fifth-img{
+    background-image: url("images/sky.jpg");
+    
+}
+
+
+.content p:first-child {
+    transform: translateY(-100%);
+    font-size: 2rem;
+  }
+  .content p:last-child {
+    transform: translateY(100%);
+    font-size:2rem;
+  }
+.content{
+    background-size: cover;
+    background-position: center;
+     flex: 1; 
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     transition: flex .5s;
+     box-shadow: 1px 2px 2px 1px rgba(255, 255, 255, 0.253) inset;
+     transition:flex 0.6s ease-in ;
+   }
+
+
+   .content > p {
+    margin:0;
+    width: 100%;
+    flex: 1 0 auto;
+    transition: transform 1s;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   .content p{
+   	color: white;
+   	font-family: monospace ;
+   	font-size: 4rem;
+   	font-weight: bold;
+    text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+   }
+
+   .changes{
+   	flex: 5;
+    transition: flex 0.5s ease-out;
+   }
+
+   .content.open-active >p:first-child,
+   .content.open-active >p:last-child {
+    transform: translateY(0);
+    transition: transform 0.7s;
+}
